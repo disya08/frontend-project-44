@@ -3,4 +3,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/63f0bfac515a90e661ea/maintainability)](https://codeclimate.com/github/disya08/frontend-project-44/maintainability)
 
-#аскинема https://asciinema.org/a/uGQb3tnlMWKsUcAxBdaLK7N9x
+#brain-even https://asciinema.org/a/uGQb3tnlMWKsUcAxBdaLK7N9x
+
+
+#calculator https://asciinema.org/a/z7Vzw08XKGN2A4TI4atXXXHaH
