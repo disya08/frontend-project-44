@@ -9,7 +9,7 @@ const generateProgression = (length, start, step, hiddenIndex) => {
   for (let i = 0; i < length; i++) {
     progression.push(start + i * step);
   }
-  progression[hiddenIndex] = '..'; // Скрываем элемент
+  progression[hiddenIndex] = '..'; 
   return progression;
 };
 

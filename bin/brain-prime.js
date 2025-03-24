@@ -17,7 +17,7 @@ const brainPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   for (let i = 0; i < 3; i++) {
-    const question = Math.floor(Math.random() * 100); // Генерируем случайное число от 0 до 99
+    const question = Math.floor(Math.random() * 100); 
     const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
     console.log(`Question: ${question}`);
