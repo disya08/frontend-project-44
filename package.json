@@ -21,6 +21,13 @@
   },
   "homepage": "https://github.com/disya08/frontend-project-44#readme",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "codeclimate-test-reporter": "^0.5.1",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0"
   }
 }
