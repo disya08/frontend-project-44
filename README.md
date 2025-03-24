@@ -7,3 +7,5 @@
 
 
 #calculator https://asciinema.org/a/z7Vzw08XKGN2A4TI4atXXXHaH
+
+#brain-gcd https://asciinema.org/a/FXL4bVzwLap8nM5XNsc6n9HGT
