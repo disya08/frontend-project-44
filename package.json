@@ -32,6 +32,7 @@
     "@eslint/create-config": "^1.0.0",
     "@eslint/eslintrc": "^3.3.0",
     "@eslint/js": "^9.21.0",
+    "@stylistic/eslint-plugin": "^5.7.1",
     "eslint": "^9.39.2",
     "eslint-config-airbnb": "^5.0.0",
     "eslint-plugin-import": "^2.31.0",
