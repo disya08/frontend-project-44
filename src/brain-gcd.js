@@ -1,25 +1,23 @@
-import startEngine from './index.js'
-import generateRandomNumber from './helps.js'
+import { runGame } from './index.js';
+import generateRandomNumber from './helps.js';
 
-const rule = 'Find the greatest common divisor of given numbers.'
-const min = 1
-const max = 50
+const rule = 'Find the greatest common divisor of given numbers.';
 
-const getNOD = (num1, num2) => (num2 === 0 ? num1 : getNOD(num2, num1 % num2))
+const min = 1;
+const max = 50;
 
-const startRound = () => {
-  const number1 = generateRandomNumber(min, max)
-  const number2 = generateRandomNumber(min, max)
+const getGCD = (num1, num2) => (num2 === 0 ? num1 : getGCD(num2, num1 % num2));
 
-  const expression = `${number1} ${number2}`
-  const answer = getNOD(number1, number2).toString()
+const getQuestionAndAnswer = () => {
+  const number1 = generateRandomNumber(min, max);
+  const number2 = generateRandomNumber(min, max);
 
-  return {
-    answer,
-    expression,
-  }
-}
+  const question = `${number1} ${number2}`;
+  const answer = getGCD(number1, number2).toString();
 
-const runBrainNodGame = () => startEngine(rule, startRound)
+  return { question, answer };
+};
 
-export default runBrainNodGame
+const startGcdGame = () => runGame(rule, getQuestionAndAnswer);
+
+export default startGcdGame;
