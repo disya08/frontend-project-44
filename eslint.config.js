@@ -4,18 +4,18 @@ import js from '@eslint/js'
 import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig([
-  { 
+  {
     files: ['**/*.{js,mjs,cjs}'],
-    languageOptions: { 
+    languageOptions: {
       globals: { ...globals.browser, ...globals.node },
     },
   },
-  { 
-    files: ['**/*.{js,mjs,cjs}'], 
-    plugins: { 
+  {
+    files: ['**/*.{js,mjs,cjs}'],
+    plugins: {
       js,
       '@stylistic': stylistic,
-    }, 
+    },
     extends: ['js/recommended'],
     rules: {
       '@stylistic/semi': ['error', 'never'],
