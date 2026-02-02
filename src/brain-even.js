@@ -9,7 +9,7 @@ const limit = {
   max: 100,
 }
 
-const isEven = (num) => num % 2 === 0
+const isEven = num => num % 2 === 0
 
 const getQuestionAndAnswer = () => {
   const randNum = getRandomNum(limit.min, limit.max)
