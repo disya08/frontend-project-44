@@ -1,28 +1,30 @@
-import { defineConfig } from "eslint/config";
-import globals from "globals";
-import js from "@eslint/js";
-import stylistic from '@stylistic/eslint-plugin';
+import { defineConfig } from 'eslint/config'
+import globals from 'globals'
+import js from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig([
   { 
-    files: ["**/*.{js,mjs,cjs}"],
+    files: ['**/*.{js,mjs,cjs}'],
     languageOptions: { 
-      globals: { ...globals.browser, ...globals.node } 
-    }
+      globals: { ...globals.browser, ...globals.node },
+    },
   },
   { 
-    files: ["**/*.{js,mjs,cjs}"], 
+    files: ['**/*.{js,mjs,cjs}'], 
     plugins: { 
       js,
-      '@stylistic': stylistic 
+      '@stylistic': stylistic,
     }, 
-    extends: ["js/recommended"],
+    extends: ['js/recommended'],
     rules: {
-      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/semi': ['error', 'never'],
       '@stylistic/eol-last': ['error', 'always'],
-      '@stylistic/quotes': ['error', 'double'],
+      '@stylistic/quotes': ['error', 'single'],
       '@stylistic/arrow-parens': ['error', 'always'],
-      '@stylistic/no-multiple-empty-lines': ['error', { max: 1 }]
-    }
+      '@stylistic/no-multiple-empty-lines': ['error', { max: 1 }],
+      '@stylistic/no-trailing-spaces': 'error',
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+    },
   },
-]);
+])
