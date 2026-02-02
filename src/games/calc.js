@@ -32,6 +32,7 @@ const getQuestionAndAnswer = () => {
 const startGame = () => {
   const description = 'What is the result of the expression?';
   runGame(description, getQuestionAndAnswer, roundsCount);
+console.error('Incorrect answer! Let\'s try again.');
 };
 
 export default startGame;
