@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { getRandomInt } from '../src/utils.js'; // Предполагается, что у вас есть функция для генерации случайных чисел
+import { getRandomInt } from '../src/utils.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 const roundsCount = 3;
@@ -15,7 +15,7 @@ const brainEvenGame = () => {
     console.log(gameDescription);
 
     for (let i = 0; i < roundsCount; i++) {
-        const question = getRandomInt(1, 100); // Генерируем случайное число от 1 до 100
+        const question = getRandomInt(1, 100);
         const correctAnswer = isEven(question) ? 'yes' : 'no';
 
         console.log(`Question: ${question}`);
